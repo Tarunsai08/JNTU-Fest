@@ -77,23 +77,7 @@
 </head>
 <body class="bg-gray-100">
     <!-- Navigation -->
-    <nav class="bg-blue-900 text-white shadow-lg fixed w-full z-10">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="#" class="font-bold text-2xl">SOUDHA 2K25</a>
-            <ul class="hidden md:flex space-x-8">
-                <li><a href="#" class="hover:text-blue-300 transition">Home</a></li>
-                <li><a href="#technical" class="hover:text-blue-300 transition">Technical Events</a></li>
-                <li><a href="#non-technical" class="hover:text-blue-300 transition">Non-Technical Events</a></li>
-                <li><a href="#workshops" class="hover:text-blue-300 transition">Workshops</a></li>
-                <li><a href="#contact" class="hover:text-blue-300 transition">Contact</a></li>
-            </ul>
-            <button class="md:hidden text-white">
-                <i class="fas fa-bars text-xl"></i>
-            </button>
-        </div>
-    </nav>
-
-    <nav class="bg-white shadow-md fixed w-full z-50">
+    <nav class=" bg-white shadow-md fixed w-full z-50">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center space-x-4">
@@ -119,7 +103,7 @@
                     </button>
                 </div>
                 
-                <a href="#register" class="hidden md:block bg-blue-700 hover:bg-blue-800 text-white py-2 px-6 rounded-full font-medium transition-all duration-300">Register Now</a>
+                <a href="#register" class="registerNowBtn hidden md:block bg-blue-700 hover:bg-blue-800 text-white py-2 px-6 rounded-full font-medium transition-all duration-300">Register Now</a>
             </div>
             
             <!-- Mobile Menu -->
@@ -239,7 +223,7 @@
                                 <!-- Days -->
                                 <div class="flex flex-col items-center">
                                     <div class="relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-lg p-5 shadow-md w-16 h-16 flex justify-center items-center">
-                                        <span class="text-3xl font-bold text-white neon-glow" id="days">15</span>
+                                        <span class="text-3xl font-bold text-white neon-glow days" id="days">15</span>
                                     </div>
                                     <p class="text-xs mt-2 text-white/70 uppercase tracking-wider">Days</p>
                                 </div>
@@ -247,7 +231,7 @@
                                 <!-- Hours -->
                                 <div class="flex flex-col items-center">
                                     <div class="relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-lg p-5 shadow-md w-16 h-16 flex justify-center items-center">
-                                        <span class="text-3xl font-bold text-white neon-glow" id="hours">08</span>
+                                        <span class="text-3xl font-bold text-white neon-glow hours" id="hours">08</span>
                                     </div>
                                     <p class="text-xs mt-2 text-white/70 uppercase tracking-wider">Hours</p>
                                 </div>
@@ -255,7 +239,7 @@
                                 <!-- Minutes -->
                                 <div class="flex flex-col items-center">
                                     <div class="relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-lg p-4 shadow-md w-16 h-16 flex justify-center items-center">
-                                        <span class="text-3xl font-bold text-white neon-glow" id="minutes">45</span>
+                                        <span class="text-3xl font-bold text-white neon-glow minutes" id="minutes">45</span>
                                     </div>
                                     <p class="text-xs mt-2 text-white/70 uppercase tracking-wider">Mins</p>
                                 </div>
@@ -263,7 +247,7 @@
                                 <!-- Seconds -->
                                 <div class="flex flex-col items-center">
                                     <div class="relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-lg p-5 shadow-md w-16 h-16 flex justify-center items-center">
-                                        <span class="text-3xl font-bold text-white neon-glow" id="seconds">30</span>
+                                        <span class="text-3xl font-bold text-white neon-glow seconds" id="seconds">30</span>
                                     </div>
                                     <p class="text-xs mt-2 text-white/70 uppercase tracking-wider">Secs</p>
                                 </div>
@@ -285,34 +269,7 @@
                             100% { transform: rotateX(0); opacity: 1; }
                         }
                     </style>
-                    
-                    <script>
-                        // Countdown timer script
-                        const eventDate = new Date("March 22, 2025 00:00:00").getTime();
-                    
-                        const updateTimer = () => {
-                            const now = new Date().getTime();
-                            const distance = eventDate - now;
-                    
-                            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                    
-                            document.getElementById("days").innerText = days;
-                            document.getElementById("hours").innerText = hours;
-                            document.getElementById("minutes").innerText = minutes;
-                            document.getElementById("seconds").innerText = seconds;
-                    
-                            // Apply flip animation
-                            document.getElementById("days").style.animation = "flip 0.5s";
-                            document.getElementById("hours").style.animation = "flip 0.5s";
-                            document.getElementById("minutes").style.animation = "flip 0.5s";
-                            document.getElementById("seconds").style.animation = "flip 0.5s";
-                        };
-                    
-                        setInterval(updateTimer, 1000);
-                    </script>                    
+                                        
                 </div>
     
                 <!-- Right content area -->
@@ -351,19 +308,19 @@
                             <div class="flex justify-between space-x-2">
                                 <div class="text-center">
                                     <div class="bg-white/5 backdrop-blur-md rounded-md py-3 px-4 border border-white/10">
-                                        <span class="text-2xl font-bold text-white">15</span>
+                                        <span class="text-2xl font-bold text-white days">15</span>
                                     </div>
                                     <p class="text-xs mt-2 text-white/60">Days</p>
                                 </div>
                                 <div class="text-center">
                                     <div class="bg-white/5 backdrop-blur-md rounded-md py-3 px-4 border border-white/10">
-                                        <span class="text-2xl font-bold text-white">08</span>
+                                        <span class="text-2xl font-bold text-white hours">08</span>
                                     </div>
                                     <p class="text-xs mt-2 text-white/60">Hours</p>
                                 </div>
                                 <div class="text-center">
                                     <div class="bg-white/5 backdrop-blur-md rounded-md py-3 px-4 border border-white/10">
-                                        <span class="text-2xl font-bold text-white">45</span>
+                                        <span class="text-2xl font-bold text-white minutes">45</span>
                                     </div>
                                     <p class="text-xs mt-2 text-white/60">Mins</p>
                                 </div>
@@ -371,6 +328,27 @@
                         </div>
                     </div>
     
+                    <script>
+                        const eventDate = new Date("March 22, 2025 00:00:00").getTime();
+                    
+                        function updateTimers() {
+                            const now = new Date().getTime();
+                            const distance = eventDate - now;
+                    
+                            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                            // Select all elements with the same class and update them
+                            document.querySelectorAll(".days").forEach(el => el.innerText = days);
+                            document.querySelectorAll(".hours").forEach(el => el.innerText = hours);
+                            document.querySelectorAll(".minutes").forEach(el => el.innerText = minutes);
+                            document.querySelectorAll(".seconds").forEach(el => el.innerText = seconds);
+                        }
+                    
+                        setInterval(updateTimers, 1000);
+                    </script>
                     <!-- Tech badge overlay -->
                     <div class="absolute -bottom-8 -left-8 z-20">
                         <div class="bg-black/40 backdrop-blur-lg p-2 rounded-full border border-white/10">
@@ -617,92 +595,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Keep the script section as is, with minor updates -->
-        <script>
-            // Modal functionality
-            const modalOverlay = document.getElementById('modalOverlay');
-            const registerNowButtons = document.querySelectorAll('.registerNowBtn');
-            const closeModalBtn = document.getElementById('closeModalBtn');
-            const eventsBtn = document.getElementById('eventsBtn');
-            const accommodationBtn = document.getElementById('accommodationBtn');
-            const eventsContent = document.getElementById('eventsContent');
-            const accommodationContent = document.getElementById('accommodationContent');
-            const modalOptions = document.getElementById('modalOptions');
-            const backButton = document.getElementById('backButton');
-            const backButtonContainer = document.getElementById('backButtonContainer');
-            const modalTitle = document.getElementById('modalTitle');
-
-            // Open modal
-            registerNowButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    modalOverlay.classList.remove('hidden');
-                    modalOverlay.classList.add('flex');
-                    document.body.style.overflow = 'hidden';
-                });
-            });
-
-            // Close modal
-            closeModalBtn.addEventListener('click', () => {
-                modalOverlay.classList.add('hidden');
-                modalOverlay.classList.remove('flex');
-                document.body.style.overflow = 'auto';
-                // Reset to options view
-                showOptions();
-            });
-
-            // Also close when clicking outside the modal content
-            modalOverlay.addEventListener('click', (e) => {
-                if (e.target === modalOverlay) {
-                    closeModalBtn.click();
-                }
-            });
-
-            // Show events content
-            eventsBtn.addEventListener('click', () => {
-                modalOptions.classList.add('hidden');
-                eventsContent.classList.remove('hidden');
-                eventsContent.classList.add('animate-fade-in');
-                backButtonContainer.classList.remove('hidden');
-                modalTitle.textContent = 'Events & Workshops Registration';
-            });
-
-            // Show accommodation content
-            accommodationBtn.addEventListener('click', () => {
-                modalOptions.classList.add('hidden');
-                accommodationContent.classList.remove('hidden');
-                accommodationContent.classList.add('animate-fade-in');
-                backButtonContainer.classList.remove('hidden');
-                modalTitle.textContent = 'Accommodation & Food';
-            });
-
-            // Back to options
-            backButton.addEventListener('click', showOptions);
-
-            function showOptions() {
-                eventsContent.classList.add('hidden');
-                accommodationContent.classList.add('hidden');
-                modalOptions.classList.remove('hidden');
-                backButtonContainer.classList.add('hidden');
-                modalTitle.textContent = 'SOUDHA2K25 Registration';
-            }
-
-            // Add hover effects to buttons
-            document.querySelectorAll('.proceed-btn').forEach(button => {
-                button.addEventListener('mouseenter', () => {
-                    button.classList.add('scale-105');
-                    setTimeout(() => button.classList.remove('scale-105'), 300);
-                });
-            });
-
-            // Add click animation to all buttons
-            document.querySelectorAll('button').forEach(button => {
-                button.addEventListener('click', function() {
-                    this.classList.add('scale-95');
-                    setTimeout(() => this.classList.remove('scale-95'), 100);
-                });
-            });
-        </script>
     
         <!-- Custom style for animations -->
         <style>
@@ -942,39 +834,24 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-8 justify-center">
                 <!-- BIM -->
                 <div class="workshop-card bg-gradient-to-br from-purple-700 to-purple-900 rounded-xl overflow-hidden shadow-xl p-6">
-                    <div class="text-center mb-4">
-                        <div class="inline-block rounded-full bg-white p-3 mb-3">
+                    <div class="flex md:block md:text-center mb-2">
+                        <div class="inline-block rounded-full bg-white p-3 mr-4 mb-3 md:mr-0">
                             <i class="fas fa-cube text-2xl text-purple-700"></i>
                         </div>
-                        <h3 class="text-xl font-bold">BIM</h3>
+                        <h3 class="text-xl font-bold mt-2">BIM</h3>
                     </div>
-                    <p class="text-center text-lg mb-4">"Transforming designs into smarter realities!"</p>
-                    <p class="text-center mb-6">Master Building Information Modeling to create comprehensive digital representations of physical and functional characteristics of facilities.</p>
-                    <div class="text-center">
+                    <p class="md:text-center text-lg mb-4">"Transforming designs into smarter realities!"</p>
+                    <p class="md:text-center mb-6">Master Building Information Modeling to create comprehensive digital representations of physical and functional characteristics of facilities.</p>
+                    <div class="md:text-center">
                         <a href="event-page.html?id=bim" class="inline-block bg-white text-purple-700 hover:bg-gray-100 font-semibold py-2 px-6 rounded-lg transition">KNOW MORE</a>
                     </div>
                 </div>
 
-                <!-- Virtual Reality -->
-                <div class="workshop-card bg-gradient-to-br from-indigo-700 to-indigo-900 rounded-xl overflow-hidden shadow-xl p-6">
-                    <div class="text-center mb-4">
-                        <div class="inline-block rounded-full bg-white p-3 mb-3">
-                            <i class="fas fa-vr-cardboard text-2xl text-indigo-700"></i>
-                        </div>
-                        <h3 class="text-xl font-bold">VIRTUAL REALITY</h3>
-                    </div>
-                    <p class="text-center text-lg mb-4">"Step into the future, experience the unreal!"</p>
-                    <p class="text-center mb-6">Explore how VR technologies are revolutionizing design reviews, client presentations, and construction planning in civil engineering.</p>
-                    <div class="text-center">
-                        <a href="event-page.html?id=" class="inline-block bg-white text-indigo-700 hover:bg-gray-100 font-semibold py-2 px-6 rounded-lg transition">KNOW MORE</a>
-                    </div>
-                </div>
-
                 <!-- PRIMEVARA -->
-                <div class="workshop-card bg-gradient-to-br from-red-700 to-red-900 rounded-xl overflow-hidden shadow-xl p-6">
+                <!-- <div class="workshop-card bg-gradient-to-br from-red-700 to-red-900 rounded-xl overflow-hidden shadow-xl p-6">
                     <div class="text-center mb-4">
                         <div class="inline-block rounded-full bg-white p-3 mb-3">
                             <i class="fas fa-tasks text-2xl text-red-700"></i>
@@ -986,7 +863,7 @@
                     <div class="text-center">
                         <a href="event-page.html?id=primevera" class="inline-block bg-white text-red-700 hover:bg-gray-100 font-semibold py-2 px-6 rounded-lg transition">KNOW MORE</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -996,7 +873,7 @@
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-4">Ready to Participate?</h2>
             <p class="text-xl mb-8 max-w-2xl mx-auto">Don't miss this exclusive opportunity to elevate your skills, connect with brilliant minds, and shape your future success. Limited spots available!</p>
-            <a href="#" class="inline-block bg-white text-blue-800 hover:bg-gray-100 font-bold py-3 px-8 rounded-lg text-lg transition duration-300 transform hover:scale-105">REGISTER NOW</a>
+            <a href="#" class="registerNowBtn inline-block bg-white text-blue-800 hover:bg-gray-100 font-bold py-3 px-8 rounded-lg text-lg transition duration-300 transform hover:scale-105">REGISTER NOW</a>
         </div>
     </section>
 
@@ -1104,6 +981,91 @@
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
+            });
+        });
+    </script>
+    <!-- Keep the script section as is, with minor updates -->
+    <script>
+        // Modal functionality
+        const modalOverlay = document.getElementById('modalOverlay');
+        const registerNowButtons = document.querySelectorAll('.registerNowBtn');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const eventsBtn = document.getElementById('eventsBtn');
+        const accommodationBtn = document.getElementById('accommodationBtn');
+        const eventsContent = document.getElementById('eventsContent');
+        const accommodationContent = document.getElementById('accommodationContent');
+        const modalOptions = document.getElementById('modalOptions');
+        const backButton = document.getElementById('backButton');
+        const backButtonContainer = document.getElementById('backButtonContainer');
+        const modalTitle = document.getElementById('modalTitle');
+
+        // Open modal
+        registerNowButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                modalOverlay.classList.remove('hidden');
+                modalOverlay.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Close modal
+        closeModalBtn.addEventListener('click', () => {
+            modalOverlay.classList.add('hidden');
+            modalOverlay.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+            // Reset to options view
+            showOptions();
+        });
+
+        // Also close when clicking outside the modal content
+        modalOverlay.addEventListener('click', (e) => {
+            if (e.target === modalOverlay) {
+                closeModalBtn.click();
+            }
+        });
+
+        // Show events content
+        eventsBtn.addEventListener('click', () => {
+            modalOptions.classList.add('hidden');
+            eventsContent.classList.remove('hidden');
+            eventsContent.classList.add('animate-fade-in');
+            backButtonContainer.classList.remove('hidden');
+            modalTitle.textContent = 'Events & Workshops Registration';
+        });
+
+        // Show accommodation content
+        accommodationBtn.addEventListener('click', () => {
+            modalOptions.classList.add('hidden');
+            accommodationContent.classList.remove('hidden');
+            accommodationContent.classList.add('animate-fade-in');
+            backButtonContainer.classList.remove('hidden');
+            modalTitle.textContent = 'Accommodation & Food';
+        });
+
+        // Back to options
+        backButton.addEventListener('click', showOptions);
+
+        function showOptions() {
+            eventsContent.classList.add('hidden');
+            accommodationContent.classList.add('hidden');
+            modalOptions.classList.remove('hidden');
+            backButtonContainer.classList.add('hidden');
+            modalTitle.textContent = 'SOUDHA2K25 Registration';
+        }
+
+        // Add hover effects to buttons
+        document.querySelectorAll('.proceed-btn').forEach(button => {
+            button.addEventListener('mouseenter', () => {
+                button.classList.add('scale-105');
+                setTimeout(() => button.classList.remove('scale-105'), 300);
+            });
+        });
+
+        // Add click animation to all buttons
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function() {
+                this.classList.add('scale-95');
+                setTimeout(() => this.classList.remove('scale-95'), 100);
             });
         });
     </script>
