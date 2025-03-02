@@ -252,7 +252,7 @@
                                 <!-- Days -->
                                 <div class="flex flex-col items-center">
                                     <div class="relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-lg p-5 shadow-md w-16 h-16 flex justify-center items-center">
-                                        <span class="text-3xl font-bold text-white neon-glow" id="days">15</span>
+                                        <span class="text-3xl font-bold text-white neon-glow days" id="days">15</span>
                                     </div>
                                     <p class="text-xs mt-2 text-white/70 uppercase tracking-wider">Days</p>
                                 </div>
@@ -260,7 +260,7 @@
                                 <!-- Hours -->
                                 <div class="flex flex-col items-center">
                                     <div class="relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-lg p-5 shadow-md w-16 h-16 flex justify-center items-center">
-                                        <span class="text-3xl font-bold text-white neon-glow" id="hours">08</span>
+                                        <span class="text-3xl font-bold text-white neon-glow hours" id="hours">08</span>
                                     </div>
                                     <p class="text-xs mt-2 text-white/70 uppercase tracking-wider">Hours</p>
                                 </div>
@@ -268,7 +268,7 @@
                                 <!-- Minutes -->
                                 <div class="flex flex-col items-center">
                                     <div class="relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-lg p-4 shadow-md w-16 h-16 flex justify-center items-center">
-                                        <span class="text-3xl font-bold text-white neon-glow" id="minutes">45</span>
+                                        <span class="text-3xl font-bold text-white neon-glow minutes" id="minutes">45</span>
                                     </div>
                                     <p class="text-xs mt-2 text-white/70 uppercase tracking-wider">Mins</p>
                                 </div>
@@ -276,7 +276,7 @@
                                 <!-- Seconds -->
                                 <div class="flex flex-col items-center">
                                     <div class="relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-lg p-5 shadow-md w-16 h-16 flex justify-center items-center">
-                                        <span class="text-3xl font-bold text-white neon-glow" id="seconds">30</span>
+                                        <span class="text-3xl font-bold text-white neon-glow seconds" id="seconds">30</span>
                                     </div>
                                     <p class="text-xs mt-2 text-white/70 uppercase tracking-wider">Secs</p>
                                 </div>
@@ -298,34 +298,7 @@
                             100% { transform: rotateX(0); opacity: 1; }
                         }
                     </style>
-                    
-                    <script>
-                        // Countdown timer script
-                        const eventDate = new Date("March 22, 2025 00:00:00").getTime();
-                    
-                        const updateTimer = () => {
-                            const now = new Date().getTime();
-                            const distance = eventDate - now;
-                    
-                            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                    
-                            document.getElementById("days").innerText = days;
-                            document.getElementById("hours").innerText = hours;
-                            document.getElementById("minutes").innerText = minutes;
-                            document.getElementById("seconds").innerText = seconds;
-                    
-                            // Apply flip animation
-                            document.getElementById("days").style.animation = "flip 0.5s";
-                            document.getElementById("hours").style.animation = "flip 0.5s";
-                            document.getElementById("minutes").style.animation = "flip 0.5s";
-                            document.getElementById("seconds").style.animation = "flip 0.5s";
-                        };
-                    
-                        setInterval(updateTimer, 1000);
-                    </script>                    
+                                        
                 </div>
     
                 <!-- Right content area -->
@@ -364,19 +337,19 @@
                             <div class="flex justify-between space-x-2">
                                 <div class="text-center">
                                     <div class="bg-white/5 backdrop-blur-md rounded-md py-3 px-4 border border-white/10">
-                                        <span class="text-2xl font-bold text-white">15</span>
+                                        <span class="text-2xl font-bold text-white days">15</span>
                                     </div>
                                     <p class="text-xs mt-2 text-white/60">Days</p>
                                 </div>
                                 <div class="text-center">
                                     <div class="bg-white/5 backdrop-blur-md rounded-md py-3 px-4 border border-white/10">
-                                        <span class="text-2xl font-bold text-white">08</span>
+                                        <span class="text-2xl font-bold text-white hours">08</span>
                                     </div>
                                     <p class="text-xs mt-2 text-white/60">Hours</p>
                                 </div>
                                 <div class="text-center">
                                     <div class="bg-white/5 backdrop-blur-md rounded-md py-3 px-4 border border-white/10">
-                                        <span class="text-2xl font-bold text-white">45</span>
+                                        <span class="text-2xl font-bold text-white minutes">45</span>
                                     </div>
                                     <p class="text-xs mt-2 text-white/60">Mins</p>
                                 </div>
@@ -384,6 +357,27 @@
                         </div>
                     </div>
     
+                    <script>
+                        const eventDate = new Date("March 22, 2025 00:00:00").getTime();
+                    
+                        function updateTimers() {
+                            const now = new Date().getTime();
+                            const distance = eventDate - now;
+                    
+                            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                            // Select all elements with the same class and update them
+                            document.querySelectorAll(".days").forEach(el => el.innerText = days);
+                            document.querySelectorAll(".hours").forEach(el => el.innerText = hours);
+                            document.querySelectorAll(".minutes").forEach(el => el.innerText = minutes);
+                            document.querySelectorAll(".seconds").forEach(el => el.innerText = seconds);
+                        }
+                    
+                        setInterval(updateTimers, 1000);
+                    </script>
                     <!-- Tech badge overlay -->
                     <div class="absolute -bottom-8 -left-8 z-20">
                         <div class="bg-black/40 backdrop-blur-lg p-2 rounded-full border border-white/10">
