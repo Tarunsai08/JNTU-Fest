@@ -366,31 +366,18 @@
         "tagline": "Design, visualize, and build smarter—welcome to BIM (Building Information Modeling), where Civil Engineering meets digital innovation for a smarter future!",
         "shortDescription": "Transforming designs into smarter realities!",
         "details": {
-          "instructions": [],
-          "registrationFee": null,
+          "instructions": [
+            "Register through the official website before the event or opt for spot registration on the day.",
+            "Confirmation : After registering, you'll recieve a confirmation with venue details and time slots.",
+            "Timeliness: Arrive at the assigned venue on time as per your confirmation; late arrivals may not be accommodated.",
+            "Materials: Bring any specified materials mentioned in your workshop details.",
+            "Etiquette: Respect workshop guidelines, avoid disruptions, and engage constructively during sessions."
+          ],
+          "registrationFee": 1200,
           "teamSize": null,
           "speaker": null,
           "coordinator": {
             "name": "R. Rajesh",
-            "contactNumber": "9391540055"
-          }
-        }
-      },
-      {
-        "id": "primevera",
-        "name": "Primevera",
-        "tagline": "Plan, schedule, and build with precision-welcome to Primavera, where Civil Engineering meets advanced project management for a seamless construction future!",
-        "shortDescription": "Plan smart, build faster, succeed better!",
-        "details": {
-          "instructions": [],
-          "registrationFee": null,
-          "teamSize": null,
-          "speaker": null,
-          "venue": null,
-          "date": null,
-          "timings": null,
-          "coordinator": {
-            "name": "J. Janu",
             "contactNumber": "9391540055"
           }
         }

@@ -107,14 +107,15 @@
             </div>
             
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="md:hidden hidden">
-                <ul class="hidden md:flex space-x-8">
-                    <li><a href="#" class="hover:text-blue-300 transition">Home</a></li>
-                    <li><a href="#technical" class="hover:text-blue-300 transition">Technical Events</a></li>
-                    <li><a href="#non-technical" class="hover:text-blue-300 transition">Non-Technical Events</a></li>
-                    <li><a href="#workshops" class="hover:text-blue-300 transition">Workshops</a></li>
-                    <li><a href="#contact" class="hover:text-blue-300 transition">Contact</a></li>
-                </ul>
+            <div id="mobile-menu" class="md:hidden hidden ">
+                <div class="flex flex-col space-y-4 py-4 px-2">
+                    <a href="/" class="text-blue-900 hover:text-blue-700 font-medium">Home</a>
+                    <a href="#technical" class="text-blue-900 hover:text-blue-700 font-medium">Technical Events</a>
+                    <a href="#non-technical" class="text-blue-900 hover:text-blue-700 font-medium">Non-Technical Events</a>
+                    <a href="#workshops" class="text-blue-900 hover:text-blue-700 font-medium">Workshops</a>
+                    <a href="#contact" class="text-blue-900 hover:text-blue-700 font-medium">Contact</a>
+                    <a href="#register" class="registerNowBtn bg-blue-700 hover:bg-blue-800 text-white py-2 px-6 rounded-full font-medium transition-all duration-300 text-center">Register Now</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -300,7 +301,7 @@
                     </div>
     
                     <!-- Floating countdown element -->
-                    <div class="absolute -top-12 -right-12 bg-black/40 backdrop-blur-lg rounded-lg border border-white/10 overflow-hidden shadow-2xl z-20">
+                    <div class="absolute -top-12 -right-24 bg-black/40 backdrop-blur-lg rounded-lg border border-white/10 overflow-hidden shadow-2xl z-20">
                         <div class="p-2 bg-gradient-to-r from-red-500 to-purple-500">
                             <h3 class="text-lg font-bold text-white text-center">Countdown</h3>
                         </div>
@@ -349,14 +350,6 @@
                     
                         setInterval(updateTimers, 1000);
                     </script>
-                    <!-- Tech badge overlay -->
-                    <div class="absolute -bottom-8 -left-8 z-20">
-                        <div class="bg-black/40 backdrop-blur-lg p-2 rounded-full border border-white/10">
-                            <div class="h-16 w-16 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
-                                <div class="text-white font-bold text-xs text-center leading-tight">NATIONAL EVENT</div>
-                            </div>
-                        </div>
-                    </div>
     
                     <!-- Circuit pattern overlay on image -->
                     <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 opacity-20 pointer-events-none">
@@ -563,7 +556,7 @@
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                                 </svg>
                                             </div>
-                                            <p class="text-white/90 text-sm">For any queries for team registrations or events, please contact <span class="font-bold">S.CHARAN</span> at <span class="font-bold text-blue-300">9989793132</span>.</p>
+                                            <p class="text-white/90 text-sm">For any queries for team registrations or events, please contact <span class="font-bold">K.BALU</span> at <span class="font-bold text-blue-300">8317695660</span>.</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -572,10 +565,7 @@
                                     <button class="proceed-btn relative overflow-hidden bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-2 px-6 rounded-lg font-bold text-center transition-all duration-300 animate-glow text-sm">
                                         <span class="absolute top-0 left-0 w-full h-full bg-white/20 transform -translate-x-full skew-x-12 group-hover:translate-x-full transition-transform duration-700"></span>
                                         <span class="relative flex items-center justify-center">
-                                            PROCEED TO PAY
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                                            </svg>
+                                            CALL TO BOOK SLOT
                                         </span>
                                     </button>
                                 </div>
@@ -813,7 +803,7 @@
                         <div class="rounded-full bg-white p-3 mr-4">
                             <i class="fas fa-leaf text-2xl text-green-700"></i>
                         </div>
-                        <h3 class="text-2xl font-bold">GREEN TECHNOLOGIES</h3>
+                        <h3 class="text-2xl font-bold">WORKSHOP ON WORLD WATER DAY</h3>
                     </div>
                     <p class="text-lg mb-6">"Sustainability starts with innovation. Let's build a greener future together!"</p>
                     <p class="mb-8">Explore cutting-edge sustainable building materials, renewable energy integration in construction, and eco-friendly design principles that minimize environmental impact.</p>
@@ -941,19 +931,28 @@
                 <div class="bg-gray-100 rounded-lg p-8 shadow-md">
                     <h3 class="text-xl font-bold text-blue-900 mb-4">Follow Us</h3>
                     <div class="flex items-center mb-6">
-                        <i class="fab fa-instagram text-2xl text-pink-600 mr-3"></i>
-                        <p>soudhajntuk</p>
+                        <a href="https://www.instagram.com/soudhajntuk" target="_blank" class="text-blue-600 hover:underline flex items-center">
+                            <i class="fab fa-instagram text-2xl text-pink-600 mr-3"></i>
+                            Soudha2k25
+                        </a>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Email Us</h3>
+                    <div class="flex items-center mb-6">
+                        <a href="" target="_blank" class="text-blue-600 hover:underline flex items-center">
+                            soudha2k25@gmail.com
+                        </a>
                     </div>
                     <h3 class="text-xl font-bold text-blue-900 mb-4">Visit Our Website</h3>
-                    <a href="http://www.soudha2k25.com" class="text-blue-600 hover:underline flex items-center">
+                    <div class="flex items-center mb-6">
+                    <a href="https://www.soudha2k25.com" target="_blank" class="text-blue-600 hover:underline flex items-center">
                         <i class="fas fa-globe text-xl mr-3"></i>
                         www.soudha2k25.com
                     </a>
+                    </div>
                     <div class="mt-8">
                         <h3 class="text-xl font-bold text-blue-900 mb-4">Department</h3>
                         <p class="text-gray-700">Department of Civil Engineering</p>
-                        <p class="text-gray-700">Jawaharlal Nehru Technological University</p>
-                        <p class="text-gray-700">University College of Engineering Kakinada</p>
+                        <p class="text-gray-700 font-semibold">Jawaharlal Nehru Technological University</p>
                     </div>
                 </div>
             </div>
@@ -1067,6 +1066,12 @@
                 this.classList.add('scale-95');
                 setTimeout(() => this.classList.remove('scale-95'), 100);
             });
+        });
+    </script>
+    <script>
+        // Toggle Mobile Menu
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
         });
     </script>
 </body>
