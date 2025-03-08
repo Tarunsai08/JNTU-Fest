@@ -443,8 +443,10 @@
 
             if(category === 'Workshop'){
                 document.getElementById('RegisterBtn').href = "https://docs.google.com/forms/d/e/1FAIpQLScNreQKSpv5zaFJq4vegI1lDxZyPUb8kwzY5Y8NCm2pFYby0A/viewform?usp=sharing"
-            } else {
+            } else if(category === 'Technical Event') {
                 document.getElementById('RegisterBtn').href = "https://docs.google.com/forms/d/e/1FAIpQLSddhLCGFevn75UI7iyPCGEkQPrp56BT_18jWUezX9Qa1B5jgw/viewform?usp=header"
+            } else {
+                document.getElementById('RegisterBtn').href = "https://docs.google.com/forms/d/e/1FAIpQLSfX6d8m5M7gmsqy2Tdvgyev3TTDjQw6WnL8qkMkwPkRQyQdlQ/viewform?usp=sharing";
             }
             
             // Set instructions
