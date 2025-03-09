@@ -236,13 +236,13 @@
             "The registration fee for the Paper presentation competition is Rs. 100 per Head",
             "Paper presentations must be based on Civil Engineering domains.",
             "Participants must present and explain their papers to the judges.",
-            "Winning and running teams will be awarded with exciting prizes. Plagarism will lead to disqualification."
+            "Winning and running teams will be awarded with exciting prizes.", 
+            "Plagarism will lead to disqualification."
           ],
           "registrationFee": 100,
           "teamSize": 1,
           "prizes": {
-            "firstPrize": "Exciting prizes (not specified)",
-            "runnerUp": "Exciting prizes (not specified)"
+            "firstPrize": "Certificate and Memento"
           },
           "coordinator": {
             "name": "P.Hari Shankar",
@@ -333,6 +333,30 @@
           "coordinator": {
             "name": "N. Pardha Saradhi",
             "contactNumber": "9014990447"
+          }
+        }
+      },
+      {
+        "id": "cultivo",
+        "name": "Cultivo",
+        "tagline": "Unleash your creativity, showcase your talent, and make unforgettable memories!",
+        "shortDescription": "Celebrate art, music, and culture with us!",
+        "details": {
+          "instructions": [
+            "Entry Fee: ₹150 for Solo Performance, ₹200 for Group Performance.",
+            "Performance Duration: 5-6 minutes per act. Time slots will be allotted based on the number of entries.",
+            "Prizes Await! Your talent and energy will be judged, and the best performances will be rewarded.",
+            "Gather your squad or take the stage solo—Cultivo is your moment to steal the show!"
+          ],
+          "registrationFee": "150 for Solo, ₹200 for Group",
+          "teamSize": "1 or more",
+          "prizes": {
+            "firstPrize": "Best Performances will be Rewarded",
+            "runnerUp": null
+          },
+          "coordinator": {
+            "name": "K. Leela Krishna",
+            "contactNumber": "8639889272"
           }
         }
       }
