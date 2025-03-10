@@ -41,8 +41,8 @@
           "registrationFee": 150,
           "teamSize": 5,
           "prizes": {
-            "firstPrize": "Cash prize worth Rs. 2000/- along with certificate and a Momentum award",
-            "runnerUp": "Cash prize worth Rs. 1000/- along with certificate and a momentum award"
+            "firstPrize": "Cash prize worth Rs. 4000/- along with certificate and a Momentum award",
+            "runnerUp": "Cash prize worth Rs. 2500/- along with certificate and a momentum award"
           },
           "coordinator": {
             "name": "D. Tejaswini Sindhura",
@@ -54,13 +54,13 @@
         "id": "concrete-combat",
         "name": "Concrete Combat",
         "tagline": "Witness strength, precision, and innovation collide in Concrete Combat! Where the toughest mixes and the sharpest minds in Civil Engineering battle it out to build the strongest structures!",
-        "shortDescription": "Stronger, tougher, unbreakable – just like your ideas!",
+        "shortDescription": "Stronger, tougher, unbreakable - just like your ideas!",
         "details": {
           "instructions": [
             "The registration fee for the Concrete Combat competition is Rs. 200 per team, with each team consisting of four members.",
             "Participants must cast an M60 grade concrete cube (150×150×150 mm) at their home or workspace before the event.",
             "The casted cube must be cured in water for 7 days before the strength test.",
-            "Number of samples cubes of your own choice.",
+            "Number of samples cubes should be three",
             "On March 22nd or 23rd, 2025, during the National Tech Fest (Soudha), the concrete cubes will be tested for load-bearing capacity.",
             "The cube that bears the highest load will be declared the winner, and the winning and running team will receive a certificate and a memento."
           ],
@@ -351,7 +351,7 @@
           "registrationFee": "150 for Solo, ₹200 for Group",
           "teamSize": "1 or more",
           "prizes": {
-            "firstPrize": "Best Performances will be Rewarded",
+            "firstPrize": "Best Performances will be awarded with momento & certifications",
             "runnerUp": null
           },
           "coordinator": {

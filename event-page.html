@@ -77,17 +77,69 @@
         }
         
         /* Prize badges */
+        /* Winner Badge - Gold & Royal */
         .prize-badge {
-            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #B8860B 100%);
+            border: 2px solid #FFD700;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2), inset 0 0 15px rgba(255,255,255,0.6);
             position: relative;
             overflow: hidden;
             transition: all 0.3s ease;
         }
-        
+
+        .prize-badge::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: linear-gradient(45deg, transparent 65%, rgba(255,215,0,0.3) 70%, transparent 75%);
+            background-size: 200% 200%;
+            animation: shine 3s infinite linear;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        /* Runner-up Badge - Silver & Blue */
         .prize-badge.runner-up {
-            background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+            background: linear-gradient(135deg, #C0C0C0 0%, #A9A9A9 50%, #778899 100%);
+            border: 2px solid #C0C0C0;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.15), inset 0 0 10px rgba(255,255,255,0.5);
+        }
+
+        .prize-badge.runner-up::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: linear-gradient(45deg, transparent 70%, rgba(192,192,192,0.2) 75%, transparent 80%);
+            background-size: 200% 200%;
+            animation: shinereverse 3s infinite linear;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        @keyframes shine {
+            0% {
+                background-position: 200% 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
         }
         
+        @keyframes shinereverse {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 200% 0;
+            }
+        }
+
         .prize-badge:hover {
             transform: scale(1.05);
         }
