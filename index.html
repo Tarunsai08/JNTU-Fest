@@ -280,64 +280,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Countdown for mobile  -->
-                    <div class="md:hidden grid grid-cols-1 mt-6 flex justify-center">
-                        <div class="relative bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 shadow-2xl w-full max-w-sm">
-                            <h3 class="text-2xl font-extrabold text-white text-center mb-6 tracking-wide">
-                                Countdown to Event 🎉
-                            </h3>
-                            <div class="grid grid-cols-4 gap-3">
-                                <!-- Days -->
-                                <div class="flex flex-col items-center">
-                                    <div class="relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-lg p-5 shadow-md w-16 h-16 flex justify-center items-center">
-                                        <span class="text-3xl font-bold text-white neon-glow days" id="days">15</span>
-                                    </div>
-                                    <p class="text-xs mt-2 text-white/70 uppercase tracking-wider">Days</p>
-                                </div>
-                    
-                                <!-- Hours -->
-                                <div class="flex flex-col items-center">
-                                    <div class="relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-lg p-5 shadow-md w-16 h-16 flex justify-center items-center">
-                                        <span class="text-3xl font-bold text-white neon-glow hours" id="hours">08</span>
-                                    </div>
-                                    <p class="text-xs mt-2 text-white/70 uppercase tracking-wider">Hours</p>
-                                </div>
-                    
-                                <!-- Minutes -->
-                                <div class="flex flex-col items-center">
-                                    <div class="relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-lg p-4 shadow-md w-16 h-16 flex justify-center items-center">
-                                        <span class="text-3xl font-bold text-white neon-glow minutes" id="minutes">45</span>
-                                    </div>
-                                    <p class="text-xs mt-2 text-white/70 uppercase tracking-wider">Mins</p>
-                                </div>
-                    
-                                <!-- Seconds -->
-                                <div class="flex flex-col items-center">
-                                    <div class="relative bg-white/10 backdrop-blur-lg border border-white/20 rounded-lg p-5 shadow-md w-16 h-16 flex justify-center items-center">
-                                        <span class="text-3xl font-bold text-white neon-glow seconds" id="seconds">30</span>
-                                    </div>
-                                    <p class="text-xs mt-2 text-white/70 uppercase tracking-wider">Secs</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <style>
-                        /* Neon glow effect */
-                        .neon-glow {
-                            text-shadow: 0 0 5px #ff5f6d, 0 0 10px #ff5f6d, 0 0 15px #ff5f6d;
-                            animation: glow 1.5s infinite alternate;
-                        }
-                    
-                        /* Smooth flip animation for numbers */
-                        @keyframes flip {
-                            0% { transform: rotateX(0); opacity: 1; }
-                            50% { transform: rotateX(90deg); opacity: 0.5; }
-                            100% { transform: rotateX(0); opacity: 1; }
-                        }
-                    </style>
-                                        
+                    </div>              
                 </div>
     
                 <!-- Right content area -->
@@ -366,57 +309,6 @@
                             <div class="absolute inset-0 bg-blue-500/10 mix-blend-screen rounded-md transform -translate-x-1 -translate-y-1 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
                         </div>
                     </div>
-    
-                    <!-- Floating countdown element -->
-                    <div class="absolute -top-12 -right-24 bg-black/40 backdrop-blur-lg rounded-lg border border-white/10 overflow-hidden shadow-2xl z-20">
-                        <div class="p-2 bg-gradient-to-r from-red-500 to-purple-500">
-                            <h3 class="text-lg font-bold text-white text-center">Countdown</h3>
-                        </div>
-                        <div class="p-4">
-                            <div class="flex justify-between space-x-2">
-                                <div class="text-center">
-                                    <div class="bg-white/5 backdrop-blur-md rounded-md py-3 px-4 border border-white/10">
-                                        <span class="text-2xl font-bold text-white days">15</span>
-                                    </div>
-                                    <p class="text-xs mt-2 text-white/60">Days</p>
-                                </div>
-                                <div class="text-center">
-                                    <div class="bg-white/5 backdrop-blur-md rounded-md py-3 px-4 border border-white/10">
-                                        <span class="text-2xl font-bold text-white hours">08</span>
-                                    </div>
-                                    <p class="text-xs mt-2 text-white/60">Hours</p>
-                                </div>
-                                <div class="text-center">
-                                    <div class="bg-white/5 backdrop-blur-md rounded-md py-3 px-4 border border-white/10">
-                                        <span class="text-2xl font-bold text-white minutes">45</span>
-                                    </div>
-                                    <p class="text-xs mt-2 text-white/60">Mins</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <script>
-                        const eventDate = new Date("March 22, 2025 00:00:00").getTime();
-                    
-                        function updateTimers() {
-                            const now = new Date().getTime();
-                            const distance = eventDate - now;
-                    
-                            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                    
-                            // Select all elements with the same class and update them
-                            document.querySelectorAll(".days").forEach(el => el.innerText = days);
-                            document.querySelectorAll(".hours").forEach(el => el.innerText = hours);
-                            document.querySelectorAll(".minutes").forEach(el => el.innerText = minutes);
-                            document.querySelectorAll(".seconds").forEach(el => el.innerText = seconds);
-                        }
-                    
-                        setInterval(updateTimers, 1000);
-                    </script>
     
                     <!-- Circuit pattern overlay on image -->
                     <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 opacity-20 pointer-events-none">
